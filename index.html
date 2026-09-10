@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIXEL MINERS — 10,000 Animated Pixel Art NFT Architecture</title>
+  <meta name="description" content="10,000 Animated Pixel Miners. 100% Pure HTML + CSS Box-Shadow Engine. Zero JS Overhead." />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="crt-active">
+
+  <!-- ==========================================
+       NAVBAR
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-badge">⛏️</div>
+        <div class="brand-title pixel-text text-cyan">PIXEL MINERS</div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#spotlight">Legendary Rigs</a></li>
+          <li><a href="#tech">CSS Engine</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-tools">
+        <button id="sound-toggle" class="btn-icon" title="Toggle 8-bit Sound Effects">🔊 SFX ON</button>
+        <button id="crt-toggle" class="btn-icon" title="Toggle Retro CRT Monitor Filter">🖥️ CRT</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Hero Content -->
+        <div>
+          <div class="hero-badge-tag">
+            <span>⚡ 100% PURE HTML & CSS ON-CHAIN ENGINE</span>
+          </div>
+
+          <h1 class="hero-headline">
+            DISCOVER <br />
+            <span class="text-cyan pixel-text">PIXEL MINERS</span>
+          </h1>
+
+          <p class="hero-description">
+            A generative collection of <strong>10,000 algorithmic cybernetic mining rigs</strong> built on a 24x24 ASCII discrete grid. 
+            Rendered natively through cascading CSS box-shadows and deterministically animated keyframes — <strong>zero image dependencies, zero JavaScript overhead</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#spotlight" class="btn btn-gold">👑 Legendary Spotlight</a>
+            <a href="#tech" class="btn btn-outline-cyan">Explore CSS Architecture</a>
+          </div>
+
+          <!-- Hero Stats Row -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <div class="stat-val text-cyan">10,000</div>
+              <div class="stat-lbl">Total Supply</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-val text-gold">13</div>
+              <div class="stat-lbl">Trait Layers</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-val" style="color:var(--neon-green);">0 JS</div>
+              <div class="stat-lbl">CSS Engine</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-val text-purple">11</div>
+              <div class="stat-lbl">Legendaries</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Hologram Card -->
+        <div>
+          <div class="hero-miner-card">
+            <div class="hero-miner-display">
+              <img id="hero-miner-img" src="assets/img/427.gif" alt="Featured Miner" />
+            </div>
+
+            <div class="hero-card-meta">
+              <div>
+                <h3 id="hero-miner-title" class="hero-card-title">Miner #427</h3>
+                <div id="hero-miner-traits" class="hero-traits-mini">
+                  <span class="mini-pill">⚙️ Gold</span>
+                  <span class="mini-pill">⛏️ Plasma Lance</span>
+                  <span class="mini-pill">🪨 Basalt</span>
+                </div>
+              </div>
+              <span id="hero-miner-rarity" class="rarity-tag tag-legendary">LEGENDARY</span>
+            </div>
+
+            <div style="margin-top:1.2rem;">
+              <button id="hero-roll-btn" class="btn btn-cyan" style="width:100%;">🎲 Roll Random Miner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LIVE INFINITE MARQUEE OF REAL GIFS
+       ========================================== -->
+  <section class="marquee-section">
+    <div class="container" style="margin-bottom:0.6rem;">
+      <span class="pixel-text text-cyan" style="font-size:0.75rem; letter-spacing:1px;">/// LIVE MINING ACTIVITY STREAM — CLICK ANY MINER TO INSPECT</span>
+    </div>
+    <div id="marquee-track" class="marquee-track">
+      <!-- Filled dynamically with animated GIFs by app.js -->
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LEGENDARY & FEATURED SPOTLIGHT SECTION
+       ========================================== -->
+  <section id="spotlight" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <h2 class="section-title pixel-text text-gold">LEGENDARY RIGS SPOTLIGHT</h2>
+        <p class="section-sub">The 11 ultra-rare units (0.11% probability) featuring high-tier chassis, rare stratum cores, and exotic tools.</p>
+      </div>
+
+      <!-- Spotlight Grid -->
+      <div id="spotlight-grid" class="nft-grid">
+        <!-- Filled with the 11 Legendaries by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECHNICAL CSS ENGINE SPECS
+       ========================================== -->
+  <section id="tech" class="section">
+    <div class="container">
+      <div class="tech-box">
+        <div>
+          <h2 class="pixel-text text-cyan" style="font-size:1.8rem; margin-bottom:1.2rem;">THE 100% PURE CSS ENGINE</h2>
+          <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:1.5rem;">
+            Each <strong>Pixel Miner</strong> is generated as an independent, ultra-lightweight HTML document. The animated pixels are drawn purely with CSS cascading box-shadows.
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:1.2rem;">
+            <div style="display:flex; gap:1rem;">
+              <div style="width:36px; height:36px; min-width:36px; background:rgba(0,243,255,0.1); border:1px solid var(--neon-cyan); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--neon-cyan); font-weight:700;">📐</div>
+              <div>
+                <strong style="color:var(--text-primary);">24x24 ASCII Discrete Grid:</strong>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Pixels are defined using container query units (`3.125cqw`) allowing lossless scaling to 4K displays with sharp pixel clarity.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem;">
+              <div style="width:36px; height:36px; min-width:36px; background:rgba(255,183,0,0.1); border:1px solid var(--neon-gold); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--neon-gold); font-weight:700;">⚡</div>
+              <div>
+                <strong style="color:var(--text-primary);">Zero JavaScript Execution:</strong>
+                <p style="color:var(--text-muted); font-size:0.9rem;">Deterministic 100ms keyframe transitions (`steps(N)`) run on the browser compositor with 0 CPU strain.</p>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem;">
+              <div style="width:36px; height:36px; min-width:36px; background:rgba(192,38,211,0.1); border:1px solid var(--neon-purple); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--neon-purple); font-weight:700;">🔒</div>
+              <div>
+                <strong style="color:var(--text-primary);">3D Euclidean Contrast Rules:</strong>
+                <p style="color:var(--text-muted); font-size:0.9rem;">RGB Euclidean distance checks ensure chassis, strata, trims, and ores always maintain high contrast.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-terminal">
+          <div style="color:var(--text-muted); margin-bottom:0.8rem;">// engine.py -> Generated CSS Card (Sample Token #1)</div>
+          <pre><code>.rig {
+  position: absolute;
+  inset: 0;
+  animation: rigkf 4.0s steps(40) infinite;
+}
+
+@keyframes rigkf {
+  0.0%, 2.499% {
+    box-shadow: calc(3.125cqw*10) calc(3.125cqw*14) var(--ch-steel),
+                calc(3.125cqw*11) calc(3.125cqw*14) var(--ch-steel),
+                calc(3.125cqw*12) calc(3.125cqw*14) var(--tr-ice)...;
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION
+       ========================================== -->
+  <section id="faq" class="section">
+    <div class="container" style="max-width:860px;">
+      <div class="section-title-wrap">
+        <h2 class="section-title pixel-text text-cyan">FREQUENTLY ASKED QUESTIONS</h2>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div style="background:var(--bg-card); border:1px solid var(--border-cyan); border-radius:14px; padding:1.5rem;">
+          <h3 style="font-size:1.15rem; color:var(--neon-cyan); margin-bottom:0.5rem;">How many Pixel Miners exist in total?</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">There are exactly 10,000 unique Pixel Miners (Token #1 to #10,000). The collection is strictly capped and deterministically generated.</p>
+        </div>
+
+        <div style="background:var(--bg-card); border:1px solid var(--border-cyan); border-radius:14px; padding:1.5rem;">
+          <h3 style="font-size:1.15rem; color:var(--neon-cyan); margin-bottom:0.5rem;">What makes the pure HTML+CSS engine unique?</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">Instead of heavy raster PNGs or GIFs, each token is a standalone HTML document. The animated pixels are drawn purely by cascading CSS box-shadows, ensuring permanent, lightweight on-chain rendering on IPFS and web browsers.</p>
+        </div>
+
+        <div style="background:var(--bg-card); border:1px solid var(--border-cyan); border-radius:14px; padding:1.5rem;">
+          <h3 style="font-size:1.15rem; color:var(--neon-cyan); margin-bottom:0.5rem;">How is visual uniqueness ensured?</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">Every token's combination of 13 attributes (Tool, Mod, Optic, Pack, Undercarriage, Chassis, Trim, Glass, Panel, Strata, Ore, Wear, Rarity) is verified for 100% uniqueness with 0 duplicate visual signatures in the entire supply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="pixel-text text-cyan" style="font-size:1.1rem; margin-bottom:0.6rem;">PIXEL MINERS ("MINERS")</div>
+      <p style="color:var(--text-secondary);">10,000 Fully On-Chain Animated HTML + CSS NFT Collection</p>
+
+      <div class="footer-socials">
+        <a href="https://x.com/PixelMinersCol" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X">𝕏 Twitter</a>
+        <a href="https://opensea.io/collection/pixel-miners-nft" target="_blank" rel="noopener noreferrer" class="social-link" title="OpenSea">🌊 OpenSea</a>
+      </div>
+
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-top:2rem;">© 2026 Pixel Miners Project. Crafted with precision & pure CSS keyframes.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       INSPECTOR MODAL
+       ========================================== -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close-btn" class="modal-close-btn" title="Close Inspector">✕</button>
+
+      <div>
+        <div class="modal-img-container">
+          <img id="modal-img" src="" alt="Miner Inspection Preview" />
+        </div>
+        <div style="margin-top:1.2rem; text-align:center;">
+          <a id="modal-html-link" href="#" target="_blank" class="btn btn-outline-cyan" style="width:100%; font-size:0.85rem;">⚡ Open Full 100% HTML Mode</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+          <h2 id="modal-title" style="font-size:1.8rem;">Miner #1</h2>
+          <span id="modal-rarity-badge" class="rarity-tag tag-common">COMMON</span>
+        </div>
+        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.2rem;">
+          24x24 Discrete Cybernetic Mining Unit. 100% Pure CSS Keyframes.
+        </p>
+
+        <h4 style="font-size:0.85rem; text-transform:uppercase; color:var(--neon-cyan); letter-spacing:1px; margin-bottom:0.6rem;">
+          Trait Matrix Specifications (13 Layers)
+        </h4>
+
+        <div id="modal-traits-matrix" class="traits-matrix">
+          <!-- Filled dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Engine -->
+  <script src="app.js"></script>
+</body>
+</html>
